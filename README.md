@@ -1,6 +1,6 @@
 ## Hello, I'm Jerome Mwaura! 👋
 
-<!--
+
 **jerome-mwaura/jerome-mwaura** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
@@ -16,5 +16,5 @@ Here are some ideas to get you started:
 ## 💬 Ask me about anything
 - artistic; music, painting, shows and movies, etc. I love art and its various mediums, whether practicing, consuming, or talking about them!
 
--->
+
 
