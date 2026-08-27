@@ -16,5 +16,5 @@ Here are some ideas to get you started:
 ## 💬 Ask me about anything
 - artistic; music, painting, shows and movies, etc. I love art and its various mediums, whether practicing, consuming, or talking about them!
 
-
+bonjour! comment ca va? bien, et toi?
 
