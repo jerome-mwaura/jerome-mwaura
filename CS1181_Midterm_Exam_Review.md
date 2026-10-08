@@ -11,8 +11,102 @@ You will need to understand the following concepts.
 
 Topics include:
 * Inheritance
+* - The concept where a class acquires properties and behaviors from another class.
+  - A subclass can reuse the fields and methods of the parent class without rewriting the code..
+  - A subclass can add its own fields and methods or modify existing ones to extend functionality.
+ Inheritance example:
+```
+// Parent class
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+// Child class
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+// Child class
+class Cat extends Animal {
+    void sound() {
+        System.out.println("Cat meows");
+    }
+}
+
+// Child class
+class Cow extends Animal {
+    void sound() {
+        System.out.println("Cow moos");
+    }
+}
+
+// Main class
+public class Geeks {
+    public static void main(String[] args) {
+        Animal a;
+        a = new Dog();
+        a.sound();  
+
+        a = new Cat();
+        a.sound(); 
+
+        a = new Cow();
+        a.sound();  
+    }
+}
+ ``` 
+    
 * Deep vs Shallow copies
+* - Shallow copy copies the reference, so both objects have the same inner reference
+ ```
+import java.util.Arrays;
+
+class Ex {
+    private int[] data;
+    // Shallow copy
+    public Ex(int[] values) {
+        this.data = values;
+    }
+    public void showData() {
+        System.out.println(Arrays.toString(data));
+    }
+}
+ ```
+- this.data = values just assigns the same array reference to data.
+- no new array is created so they're both the same
+  
+    
+* - Deep copy creates a new copy of the inner objects too.
+```
+import java.util.Arrays;
+
+class Ex {
+    private int[] data;
+
+    // Deep copy
+    public Ex(int[] values) {
+        data = new int[values.length];
+        for (int i = 0; i < values.length; i++) {
+            data[i] = values[i];
+        }
+    }
+    public void showData() {
+        System.out.println(Arrays.toString(data));
+    }
+}
+```
+  - a new array is created in the constructor using "new int[values.length]"
+  - a for loop copies the elements from values into the new data array.
+  - changing vals[0] does not affect data.
+
+  - 
 * Polymorphism
+- Inheritance lets us inherit methods and attributes from other classes. Polymorphism lets us use those methods to perform different tasks.
+* 
 * Abstract classes
   * Can I create an object for an abstract class?
   * What methods need to be implemented by children of an abstract class?
